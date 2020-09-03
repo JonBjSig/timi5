@@ -1,6 +1,12 @@
-Take in a value n as input
-The program holds the last 3 values and the curret calculated sum (all initialized as 0)
-The program then performs the following operation n times
-Calculate the sum of the last 3 values and store in the sum variable
-Each past value is then shifted forward, setting the latest value as equal to the sum variable and dropping the oldest value
-Print the sum variable
+n = int(input("Enter the length of the sequence: ")) # Do not change this line
+
+oldest_int = 0
+middle_int = 0
+newest_int = 1
+sum_int = 0
+for i in range(0, n):
+	oldest_int = middle_int
+	middle_int = newest_int
+	newest_int = sum_int
+	print(oldest_int + middle_int + newest_int)
+	sum_int = oldest_int + middle_int + newest_int
