@@ -1,5 +1,9 @@
-first take a number as input from the user
-set the max_int variable to that value
-continually ask the user to input new numbers
-if the new input is larger than the max_int variable, set the max_int variable to that value
-once the user inputs a negative number, the program stops and prints the largest value the user typed in
+
+num_int = int(input("Input a number: "))    # Do not change this line
+# Fill in the missing code
+max_int = num_int
+while num_int >= 0:
+	num_int = int(input("Input a number: "))
+	if num_int > max_int:
+		max_int = num_int
+print("The maximum is", max_int)    # Do not change this line
